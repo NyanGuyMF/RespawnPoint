@@ -1,0 +1,10 @@
+main: voidpointer.bukkit.respawnpoint.RespawnPointPlugin
+name: ${project.name}
+version: ${project.version}
+author: 'VoidPointer aka NyanGuyMF'
+load: POSTWORLD
+
+commands:
+  setrespawnpoint:
+    aliases: ['setrp', 'setr', 'setrespawn']
+    description: 'Sets death respawn point'
