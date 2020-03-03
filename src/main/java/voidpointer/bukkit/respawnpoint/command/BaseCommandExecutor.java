@@ -41,11 +41,10 @@ abstract class BaseCommandExecutor implements CommandExecutor {
         CommandArgs args = new BaseCommandArgs(sender, rawArgs);
 
         boolean isCancelled = false;
-        if (isCancelled = !hasPermission(sender)) {
+        if (isCancelled = !hasPermission(sender))
             locale.sendMessage(sender, ErrorMessage.NO_PERMISSION);
-        } else if (isCancelled = (isPlayerRequired() && !args.isPlayer())) {
+        else if (isCancelled = (isPlayerRequired() && !args.isPlayer()))
             locale.sendMessage(sender, ErrorMessage.PLAYER_IS_REQUIRED);
-        }
 
         if (!isCancelled)
             execute(args);
